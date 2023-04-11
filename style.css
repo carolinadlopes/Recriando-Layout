@@ -61,10 +61,27 @@ section p span {
   font-weight: bold;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.text {
+  padding: 0 15px;
+}
+
+@media (min-width: 960px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
 }
 
 #line {
